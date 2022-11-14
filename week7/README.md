@@ -64,9 +64,7 @@ class ThemedButton extends React.Component {
 ## **React Testing**
 **Learning Objective:**\
 Peserta mampu memahami Unit Testing\
-Peserta mampu membuat Unit testing dengan Jest\
-Peserta mampu membuat mocking dan handle asynchronous testing dengan Jest\
-Peserta mampu membuat testing untuk component React.js menggunakan RTL
+Peserta mampu membuat Unit testing dengan Jest
 
 - React testing merupakan sebuah library yang memungkinkan developer untuk mengetes komponen React
 - Gunanya melakukan testing pada komponen adalah untuk mengurangi adanya bug pada aplikasi, meningkatkan produktivitas agar terlatih dalam mendesain dengan sebuah objektif, dan membuat kode lebih tercakup dan memudahkan jika adanya perubahan
@@ -83,10 +81,7 @@ Peserta mampu membuat testing untuk component React.js menggunakan RTL
 - Jest dapat di-install dengan menggunakan :
 
 ```
-npm install -g jest
-```
-```
-npm install --save-dev jest
+npm install jest
 ```
 
 Untuk menggunakan jest dapat menggunakan seperti ini :
@@ -96,3 +91,21 @@ Untuk menggunakan jest dapat menggunakan seperti ini :
     "test": "jest"
   }
 ```
+
+Penggunaan unit testing dengan jest dapat dilakukan seperti ini :
+
+![Kode Penjumlahan](images/app.jpg)
+
+Lakukan ini jika jest sudah terinstall pada React untuk me-running test
+
+```
+npm run test
+```
+
+Jika berhasil akan keluar seperti di bawah ini :
+
+![Testing Berhasil](images/pass.jpg)
+
+Namun jika ada test yang gagal akan muncul seperti, 
+
+![Testing Gagal](images/fail.jpg)
